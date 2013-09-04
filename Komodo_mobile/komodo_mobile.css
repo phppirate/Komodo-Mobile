@@ -262,13 +262,13 @@ div.komodo_list_title{
 .komodo_link_list a:hover .komodo_list_count{
     color: #fff;
 }
-.komodo_list .komodo_list_count{
+.komodo_list .komodo_list_count, .komodo_list-full .komodo_list_count{
     color: rgb(42,64,118);
     font-size: small;
     float: right;
     padding: 4px;
 }
-.komodo_list li:hover .komodo_list_count{
+.komodo_list li:hover .komodo_list_count, .komodo_list-full li:hover .komodo_list_count{
     color: rgb(42,64,118);
 }
 .komodo_link_list{
@@ -334,6 +334,99 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#047ad6', end
     border-left: 1px inset #f6f6f6;
     border-right: 1px inset #f6f6f6;
 }
+
+
+
+
+
+
+
+
+
+.komodo_link_list-full{
+    list-style: none;
+    position: relative;
+    right: 0px;
+    left: 0px;
+}
+.komodo_link_list-full li{
+    font-size: medium;
+    display: block;
+    position: relative;
+    top: -30px;
+    right: 0px;
+    left: -20px;
+    margin-left: -20px;
+}
+.komodo_link_list-full li:first-child a{
+    border-top: 1px inset #f6f6f6;
+    border-bottom: 1px solid #cbcbcb;
+    border-left: 1px inset #f6f6f6;
+    border-right: 1px inset #f6f6f6;
+    border-radius: none;
+    border: none;
+    border-bottom: 1px solid #aaa;
+}
+.komodo_link_list-full li a{
+    color: #000;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    background: #fff url("images/list_arrow.png") no-repeat right center;
+    border-bottom: 1px solid #aaa;
+}
+.komodo_link_list-full li a:hover{
+    display: block;
+    position: relative;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-shadow: 1px -1px 0px #48445f;
+    background: #047ad6; /* Old browsers */
+    background: url("images/list_arrow_hover.png") no-repeat right center;
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#047ad6), color-stop(2%,#058bf5), color-stop(5%,#058bf5), color-stop(39%,#047cf0), color-stop(82%,#0163e8), color-stop(100%,#015de6)); /* Chrome,Safari4+ */
+background: -moz-linear-gradient(top,  #047ad6 0%, #058bf5 2%, #058bf5 5%, #047cf0 39%, #0163e8 82%, #015de6 100%) url("images/list_arrow_hover.png") no-repeat right center; /* FF3.6+ */
+background: -webkit-linear-gradient(top,  #047ad6 0%,#058bf5 2%,#058bf5 5%,#047cf0 39%,#0163e8 82%,#015de6 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #047ad6 0%,#058bf5 2%,#058bf5 5%,#047cf0 39%,#0163e8 82%,#015de6 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #047ad6 0%,#058bf5 2%,#058bf5 5%,#047cf0 39%,#0163e8 82%,#015de6 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #047ad6 0%,#058bf5 2%,#058bf5 5%,#047cf0 39%,#0163e8 82%,#015de6 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#047ad6', endColorstr='#015de6',GradientType=0 ); /* IE6-9 */
+    border: none;
+    border-bottom: 1px solid #aaa;
+
+
+}
+.komodo_link_list-full li:last-child a{
+    border-bottom: 1px inset #f6f6f6;
+    border-radius: none;
+    border-left: 1px inset #f6f6f6;
+    border-right: 1px inset #f6f6f6;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .komodo_list li input{
 	background: #fff;
 	outline: none;
@@ -359,7 +452,49 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#047ad6', end
     right: 0px;
     left: -30px;
 }
-.komodo_list li{
+.komodo_list-full li{
+    color: #000;
+    border-left: 1px inset #f6f6f6;
+    border-bottom: 1px solid #cbcbcb;
+    border-right: 1px inset #f6f6f6;
+    font-weight: bolder;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+}
+.komodo_list-full li input{
+	background: #fff;
+	outline: none;
+	font-size: large;
+	padding: 10px;
+	width: intrinsic;
+	max-width: 40%;
+	margin: -10px 0 -10px 5px;
+	border: none;
+}
+
+
+.komodo_list-full li:first-child{
+    border-top: 1px inset #f6f6f6;
+    border-bottom: 1px solid #cbcbcb;
+    border-left: 1px inset #f6f6f6;
+    border-right: 1px inset #f6f6f6;
+    border-radius: none;
+}
+.komodo_list-full{
+    list-style: none;
+    position: relative;
+    top: -30px;
+    right: 0px;
+    left: 0px;
+    margin-left: -40px;
+}
+.komodo_list-full li{
     color: #000;
     border-left: 1px inset #f6f6f6;
     border-bottom: 1px solid #cbcbcb;
@@ -400,7 +535,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#047ad6', end
     border-left: 1px inset #f6f6f6;
     border-right: 1px inset #f6f6f6;
 }
-
+.komodo_list-full li:last-child{
+    border-bottom: 1px inset #f6f6f6;
+    border-radius: none;
+    border-left: 1px inset #f6f6f6;
+    border-right: 1px inset #f6f6f6;
+}
 .komodo_lightText{
 	font-weight: bold;
 	color: rgb(42,64,118);

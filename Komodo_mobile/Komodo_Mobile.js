@@ -35,10 +35,16 @@ $(document).ready( function(e){
 	if($("div[data-komodo=list_title]").attr("data-komodo") == "list_title"){
 		$("div[data-komodo=list_title]").addClass("komodo_list_title");
 	}
-	if($("div[data-komodo=link_list]").attr("data-komodo") == "link_list"){
-		$("div[data-komodo=link_list]").addClass("komodo_link_list");
+	if($("ul[data-komodo=link_list]").attr("data-komodo") == "link_list"){
+		$("ul[data-komodo=link_list]").addClass("komodo_link_list");
 	}
 	if($("ul[data-komodo=list]").attr("data-komodo") == "list"){
 		$("ul[data-komodo=list]").addClass("komodo_list");
+	}
+	if($("ul[data-komodo=link_list-full]").attr("data-komodo") == "link_list-full"){
+		$("ul[data-komodo=link_list-full]").addClass("komodo_link_list-full");
+	}
+	if($("ul[data-komodo=list-full]").attr("data-komodo") == "list-full"){
+		$("ul[data-komodo=list-full]").addClass("komodo_list-full");
 	}
 });
