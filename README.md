@@ -43,6 +43,8 @@ Link List (full) `data-komodo="link_list-full"`
 
 Inner Content `data-komodo="innercontent"`
 
+Footer `data-komodo="foot"`
+
 
 
 
