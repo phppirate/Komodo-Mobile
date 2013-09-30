@@ -25,9 +25,12 @@ Basic Page Example
 </div>
 ```
 
-Page ```data-komodo="page"```
+Page `data-komodo="page"`
+
 Header `data-komodo="head"`
+
 Content `data-komodo="content"`
+
 List Title `data-komodo="list_title"`
 List (inset) `data-komodo="list"`
 List (full) `data-komodo="list-full"`
