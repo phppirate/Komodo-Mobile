@@ -19,8 +19,26 @@ Basic Page Example
       <li>item</li>
     </ul>
   </div>
-  <div data-komodo="footer">
+  <div data-komodo="foot">
     © 2013 Komodo Mobile
   </div>
 </div>
 ```
+
+Page `data-komodo="page"`
+Header `data-komodo="head"`
+Content `data-komodo="content"`
+List Title `data-komodo="list_title"`
+List (inset) `data-komodo="list"`
+List (full) `data-komodo="list-full"`
+Link List (inset) `data-komodo="link_list"`
+Link List (full) `data-komodo="link_list-full"`
+Inner Content `data-komodo="innercontent"`
+
+
+
+
+
+
+
+
