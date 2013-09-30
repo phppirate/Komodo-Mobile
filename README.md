@@ -3,6 +3,7 @@ Komodo-Mobile
 
 Mobile Framework
 
+Basic Page Example
 ```
 <div data-komodo="page">
   <div data-komodo="head">
